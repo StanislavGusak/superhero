@@ -1,15 +1,13 @@
-import PropTypes, { element } from 'prop-types';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { debounce } from 'lodash';
 import { GetApi } from '../../Utils/GetApi';
-import { withErrorApi } from '../../Hoc/withErrorApi';
 import UiInput from '../../Utils/UI/UiInput/UiInput';
 import SearchPageInfo from '../../Components/SearchPage/SearchPageInfo';
-import { API__SEARCH, HASH, API__KEY, IMG__URL } from '../../Components/constants';
+import { API__SEARCH, HASH, API__KEY } from '../../Components/constants';
 import photo from './img/Hulk.png';
 import styles from './SearchPage.module.css';
 
-const SearchPage = ({ setErrorApi }) => {
+const SearchPage = () => {
     const [inputSearchValue, setInputSearchValue] = useState('');
     const [character, setCharacter] = useState([])
 
@@ -27,11 +25,7 @@ const SearchPage = ({ setErrorApi }) => {
                     extension
                 }
             });
-
             setCharacter(characterList)
-            //     setErrorApi(false)
-            // }else {
-            //     setErrorApi(true)
         }
     }
 
@@ -61,11 +55,6 @@ const SearchPage = ({ setErrorApi }) => {
         </div>
     )
 }
-
-SearchPage.propTypes = {
-    setErrorApi: PropTypes.func
-}
-// export default withErrorApi(SearchPage);
 
 export default SearchPage;
 
