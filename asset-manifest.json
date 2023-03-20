@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/superhero/static/css/main.d587f0d7.css",
+    "main.js": "/superhero/static/js/main.fed66fd8.js",
+    "static/css/638.58bb3c66.chunk.css": "/superhero/static/css/638.58bb3c66.chunk.css",
+    "static/js/638.3cdeca9b.chunk.js": "/superhero/static/js/638.3cdeca9b.chunk.js",
+    "static/js/787.c5381db8.chunk.js": "/superhero/static/js/787.c5381db8.chunk.js",
+    "static/media/Hulk.png": "/superhero/static/media/Hulk.eadc72c975f32213c92b.png",
+    "static/media/neitral.jpg": "/superhero/static/media/neitral.a6e57f1288c16942eed6.jpg",
+    "static/media/light-side.jpg": "/superhero/static/media/light-side.546190f5dc88f906fef1.jpg",
+    "static/media/dark-side.jpg": "/superhero/static/media/dark-side.f85c00cffe09eb59d08c.jpg",
+    "index.html": "/superhero/index.html",
+    "static/media/loader-black.svg": "/superhero/static/media/loader-black.4954368d62277de76afe9fe9733d3cd9.svg",
+    "static/media/loader-blue.svg": "/superhero/static/media/loader-blue.125804102b5c8e8009e94e17ef726e54.svg",
+    "static/media/loader-white.svg": "/superhero/static/media/loader-white.155008249981a7167a9739355909447d.svg",
+    "static/media/favourite.svg": "/superhero/static/media/favourite.3faf9d61936abd85a8650b86204d4f1d.svg",
+    "static/media/star-fill.svg": "/superhero/static/media/star-fill.995293015fadf4d702721a21ef7a654a.svg",
+    "static/media/star.svg": "/superhero/static/media/star.eac2503cb04dd9080d5624a8170e5d88.svg",
+    "main.d587f0d7.css.map": "/superhero/static/css/main.d587f0d7.css.map",
+    "main.fed66fd8.js.map": "/superhero/static/js/main.fed66fd8.js.map",
+    "638.58bb3c66.chunk.css.map": "/superhero/static/css/638.58bb3c66.chunk.css.map",
+    "638.3cdeca9b.chunk.js.map": "/superhero/static/js/638.3cdeca9b.chunk.js.map",
+    "787.c5381db8.chunk.js.map": "/superhero/static/js/787.c5381db8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d587f0d7.css",
+    "static/js/main.fed66fd8.js"
+  ]
+}
