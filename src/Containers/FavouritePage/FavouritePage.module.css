@@ -1,0 +1,24 @@
+.favourite__wrapper {
+    margin-top: 150px;
+    padding: 0 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    .favourite__wrapper { 
+        padding: 0 25px;
+    }
+}
+
+.title,
+.coment  {
+    font-family: var(--secondary-font);
+    font-size: var(--default-font-title);
+    text-shadow: 0 0 2px var(--default-color-white);
+    color: var(--theme-default-header);
+}
+
+.coment {
+    font-size: var(--default-font-subtitle);
+    font-weight: var(--secondary-font-weight);
+    text-shadow: var(--text-shadow);
+}

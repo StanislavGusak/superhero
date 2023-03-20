@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Domine:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+     /* fonts */
+    --primary-font:           'Montserrat', sans-serif;
+    --secondary-font:         'Domine', serif;
+    --font-logo:              'Bungee Inline', cursive;
+
+    /* font-size */
+    --default-font-title:     28px;
+    --default-font-subtitle:  22px;
+    --font-size-medium:       18px;
+    --default-font-size:      16px;
+    --font-size-small:        14px;
+
+    /* font-weight */
+    --primary-font-weight:    400;
+    --secondary-font-weight:  700;
+
+     /* color */
+    --default-color-white:    #FFFFFF;
+    --default-color-blue:     #2C4058;
+    --color-black:            #000000;
+    --color-purple:           #7E5AFF;
+    --color-blue:             #55B7FF;
+    --color-grey:             #1b1b1b;
+    --red:                    #f12323;
+    --color-light:            #f2f701;
+    --color-green:            #06ff1b;
+    --bg-light:               #9ca1a0d5;
+    --bg-neitral:             #14504e;
+
+    /*  theme */
+    --theme-dark-header:      var(--default-color-white);
+    --theme-light-header:     var(--color-light);
+    --theme-neitral-header:   var(--color-green);
+    --theme-default-header:   var(--theme-dark-header);
+
+    --theme-dark-bgimage:      var(--color-grey);
+    --theme-light-bgimage:     var(--bg-light);
+    --theme-neitral-bgimage:   var(--bg-neitral);
+    --theme-default-bgimage:   var(--theme-dark-bgimage);
+
+     /* shadow */
+    --text-shadow:            0 0 2px var(--default-color-white);
+    --box-shadow:             0 4px 8px 0 var(--default-color-white), 0 6px 20px 0 var(--color-blue);
+    --text-shadow-blue:       0 0 2px var(--default-color-blue), 0 0 40px var(-color-blue)
+    --color-shadow-light:     var(--color-black);
+    --color-shadow-dark:      var(--box-shadow);
+    --color-shadow-neitral:   #05ffff;
+
+     /* transition */
+    --transition:             all 500ms ease;
+
+     /* border-radius */
+    --btn-radius:             6px;
+    --box-radius:             10px; 
+
+     /* breakpoints */
+    --desktop:               1920px;
+    --desktop-small:         1024px;
+    --tablet:                800px;
+    --mobile:                375px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+* {
+    scrollbar-color: var(--color-blue);
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-blue);
+    border-radius: var(--btn-radius);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-grey);
+}
+
+body {
+    background: var(--theme-default-bgimage);
+    background-repeat: no-repeat;
+    max-width: var(--desktop);
+    min-width: var(--mobile);
+    margin: 0 auto;
+    padding: 0;
+    font-family: var(--primary-font);
+    font-size: var(--default-font-size);
+    font-weight: var(--primary-font-weight);
+    color: var(--default-color-white);
+    line-height: 1.7;
 }

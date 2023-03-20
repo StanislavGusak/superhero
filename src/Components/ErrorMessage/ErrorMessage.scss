@@ -1,0 +1,35 @@
+.error {
+    width: 30%;
+    margin: 100px auto 0;
+    text-align: center;
+
+    .title {
+        color: var(--red);
+    }
+
+    &__message {
+        color: var(--red);
+        text-decoration: none;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        text-decoration: none;
+        padding: 7px 15px;
+        transition: all 500ms ease;
+
+        &:hover {
+            border: 2px solid var(--red);
+            color: var(--red);
+            text-shadow: none;
+        }
+    }
+
+    &__text {
+        color: var(--default-color-white);
+        text-shadow: none;
+    }
+
+    &__text u {
+        color: var(--red);
+        text-shadow: none;
+    }
+}

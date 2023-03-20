@@ -1,0 +1,41 @@
+.wrapper {
+    margin-top: 150px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 1024px) {
+        padding: 0 25px;
+    }
+}
+
+.title {
+    font-family: var(--secondary-font);
+    font-size: var(--default-font-title);
+    text-shadow: 0 0 2px var(--default-color-white);
+    color: var(--theme-default-header);
+}
+
+.input__search {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.search__img {
+    display: block;
+    width: 50%;
+    border-radius: 6px;
+}
+
+.photo {
+    width: 100%;
+    max-width: 180px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    object-fit: cover;
+    z-index: -1;
+}

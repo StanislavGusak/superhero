@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import HomePage from './Containers/HomePage/HomePage'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import CharactersPage from './Containers/CharactersPage/CharactersPage';
+import Root from './Containers/CharactersPage/Root/Root';
+import Error from './Components/Error404/Error';
+import PersonPage from './Containers/PersonPage/PersonPage';
+import SearchPage from './Containers/SearchPage/SearchPage';
+import FavouritePage from './Containers/FavouritePage/FavouritePage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Root />,
+      errorElement: <Error />,
+      children: [
+        { path: '/', element: <HomePage /> },
+        { path: '/characters', element: <CharactersPage /> },
+        { path: '/characters/:id', element: <PersonPage /> },
+        { path: '/search', element: <SearchPage /> },
+        { path: '/favourites', element: <FavouritePage /> },
+        { path: '*', element: <Error /> },
+      ]
+    }
+  ])
+  return <RouterProvider router={router} />;
 }
-
 export default App;

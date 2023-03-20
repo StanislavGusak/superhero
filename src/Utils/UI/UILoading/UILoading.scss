@@ -1,0 +1,11 @@
+.loader {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.shadow {
+    filter: drop-shadow(0 0 2px var(--color-black));
+}
