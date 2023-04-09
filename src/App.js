@@ -25,6 +25,6 @@ const App = () => {
       ]
     }
   ])
-  return <RouterProvider router={router} basename='/StanislavGusak' />;
+  return <RouterProvider router={router} basename='/stanislavgusak.github.io' />;
 }
 export default App;
