@@ -12,7 +12,6 @@ import FavouritePage from './Containers/FavouritePage/FavouritePage';
 
 //   const router = createBrowserRouter([
 //     {
-//       basename: '/superhero',
 //       path: '/',
 //       element: <Root />,
 //       errorElement: <Error />,
@@ -35,7 +34,7 @@ const App = () => {
     <>
       <Root />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="" element={<HomePage />} />
         <Route path="/characters" element={<CharactersPage />} />
         <Route path="/characters/:id" element={<PersonPage />} />
         <Route path="/search" element={<SearchPage />} />
