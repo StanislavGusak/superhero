@@ -11,7 +11,6 @@ const Error = () => {
         <h2>Page not found</h2>
         <p className='error__text'>No much for <u>{location.pathname}</u></p>
         <p>Please go to <Link to={'/'} className="error__message">Home page</Link></p>
-
     </div>
   )
 }
