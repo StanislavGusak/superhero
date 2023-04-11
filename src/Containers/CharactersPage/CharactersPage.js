@@ -5,8 +5,8 @@ import { withErrorApi } from '../../Hoc/withErrorApi';
 import { GetApi } from '../../Utils/GetApi';
 import { API__CHARACTERS, IMG__URL } from '../../Components/constants';
 
-// const CharactersPage = ({ setErrorApi }) => {
-const CharactersPage = () => {
+const CharactersPage = ({ setErrorApi }) => {
+// const CharactersPage = () => {
 
     const [characters, setCharacters,] = useState(null);
 
@@ -24,9 +24,9 @@ const CharactersPage = () => {
             })
             
             setCharacters(heroList);
-        //     setErrorApi(false);
-        // } else {
-        //     setErrorApi(true);
+            setErrorApi(false);
+        } else {
+            setErrorApi(true);
         }
     }
 
@@ -47,7 +47,7 @@ CharactersPage.propTypes = {
     setErrorApi: PropTypes.func
 }
 
-// export default withErrorApi(CharactersPage);
-export default CharactersPage;
+export default withErrorApi(CharactersPage);
+// export default CharactersPage;
 
 
