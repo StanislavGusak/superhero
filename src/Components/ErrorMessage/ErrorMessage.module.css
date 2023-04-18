@@ -1,0 +1,35 @@
+.error {
+    width: 30%;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.title {
+    color: var(--red);
+}
+
+.error__message {
+    color: var(--theme-default-header);
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 500ms ease;
+}
+
+.error__message:hover {
+    border: 2px solid var(--theme-default-header);
+    color: var(--theme-default-header);
+    text-shadow: none;
+}
+
+.error__text {
+    color: var(--default-color-white);
+    text-shadow: none;
+}
+
+.error__text u {
+    color: var(--red);
+    text-shadow: none;
+}

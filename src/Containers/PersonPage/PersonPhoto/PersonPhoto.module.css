@@ -1,15 +1,15 @@
 .photo {
     margin-right: 25px;
     position: relative;
+}
 
-    &__img {
-        display: block;
-        width: 100%;
-        max-width: 300px;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 6px;
-    }
+.photo__img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
 }
 
 .favourite {

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { IoChevronBack } from 'react-icons/io5';
-import './PersonLinkBack.scss';
+import styles from './PersonLinkBack.module.css';
 
 const PersonLinkBack = () => {
 const navigate = useNavigate();
@@ -14,9 +14,9 @@ const HandleGoBack = e => {
     <a
         href='#'
         onClick={HandleGoBack}
-        className='link'
+        className={styles.link}
     >
-        <IoChevronBack className="link__img"/>
+        <IoChevronBack className={styles.link__img} />
         <span>Go back</span>
     </a>
   )

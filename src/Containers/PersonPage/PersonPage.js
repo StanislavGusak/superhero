@@ -7,9 +7,9 @@ import { GetApi } from '../../Utils/GetApi';
 import PersonLinkBack from './PersonLinkBack/PersonLinkBack';
 import PersonInfo from './PersonInfo/PersonInfo';
 import PersonPhoto from './PersonPhoto/PersonPhoto';
-import { API__KEY, API__URL__ROOT, KEY, HTTPS, IMG__URL } from '../../Components/constants';
+import { API__KEY, API__URL__ROOT, KEY, HTTPS, IMG__URL } from '../../Components/constants/constants';
 import UILoading from '../../Utils/UI/UILoading/UILoading';
-import './PersonPage.scss';
+import styles from './PersonPage.module.css';
 
 const PersonComics = React.lazy(() => import('./PersonComics/PersonComics'));
 
@@ -71,12 +71,11 @@ const PersonPage = ({ setErrorApi }) => {
 
     return (
         <>
-            {/* <UILoading /> */}
-            <div className='person-page'>
+            <div className={styles.person__page}>
                 <PersonLinkBack />
-                <div className='person'>
-                    <h1 className='person__title'>{personName}</h1>
-                    <div className='person__wrapper'>
+                <div className={styles.person}>
+                    <h1 className={styles.person__title}>{personName}</h1>
+                    <div className={styles.person__wrapper}>
                         <PersonPhoto
                             personId={personId}
                             personName={personName}

@@ -1,10 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { IMG__URL } from '../constants';
-import CharactersList from '../CharactersPage/CharactersList/CharactersList';
-
+import { IMG__URL } from '../constants/constants';
 import styles from './SearchPageInfo.module.css';
-
 
 const SearchPageInfo = ({ character }) => (
     <>

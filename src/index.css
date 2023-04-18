@@ -27,8 +27,8 @@
     --red:                    #f12323;
     --color-light:            #f2f701;
     --color-green:            #06ff1b;
-    --bg-light:               #9ca1a0d5;
-    --bg-neitral:             #14504e;
+    --bg-light:               #eceae9;
+    --bg-neitral:             #688fa8;
 
     /*  theme */
     --theme-dark-header:      var(--default-color-white);

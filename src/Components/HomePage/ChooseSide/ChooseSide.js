@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import cn from 'classnames';
 import PropTypes from 'prop-types';
 import { THEME__DARK, THEME__LIGHT, THEME__NEITRAL, useTheme } from '../../../Context/ThemeProvider';
@@ -58,21 +57,6 @@ const ChooseSide = () => {
 
         }
     ];
-
-    const isTheme = useTheme();
-
-    const [items, setItems] = useState({});
-
-    useEffect(() => {
-        const item = JSON.parse(localStorage.getItem('items'));
-        if (items) {
-            setItems(item);
-        }
-    }, []);
-
-    useEffect(() => {
-        localStorage.setItem('items', JSON.stringify(elements));
-    }, [isTheme]);
 
     return (
         <div className={styles.theme}>

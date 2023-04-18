@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import LoaderBlue from'../img/loader-blue.svg';
 import LoaderBlack from'../img/loader-black.svg';
 import LoaderWhite from'../img/loader-white.svg';
-import './UILoading.scss';
+import cn from 'classnames';
+import styles from './UILoading.module.css';
 
 const UILoading = ({
   theme = 'light',
@@ -23,7 +24,7 @@ useEffect(() => {
 
   return (
     <img 
-    className='loader shadow'
+    className={cn(styles.loader, styles.shadow)}
     src={loaderIcon}
     alt='loader'
     />

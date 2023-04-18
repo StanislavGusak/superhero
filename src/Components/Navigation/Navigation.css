@@ -1,0 +1,106 @@
+@media screen and (max-width: 800px) {
+    .nav {
+        padding-right: 20px;
+    }
+}
+
+.nav__container {
+    display: flex;
+}
+
+.menu {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 90px;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: var(--color-grey);
+        box-sizing: border-box;
+        z-index: 5;
+    }
+}
+
+.menu__list {
+    list-style: none;
+    margin: 0 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu__list {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu__list {
+        margin: 20px auto;
+    }
+}
+
+.menu__list__link {
+    display: block;
+    text-align: center;
+    min-width: 135px;
+    color: var(--default-color-white);
+    border: 2px solid transparent;
+    border-radius: var(--btn-radius);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: var(--text-shadow);
+    padding: 7px 10px;
+    transition: var(--transition);
+}
+
+@media screen and (max-width: 1024px) {
+    .menu__list__link {
+        font-size: var(--font-size-small);
+    }
+}
+
+.menu__list__link:hover {
+    border: 2px solid var(--color-blue);
+    color: var(--color-blue);
+}
+
+.active {
+    border: 2px solid var(--theme-default-header);
+    color: var(--theme-default-header);
+}
+
+@media screen and (max-width: 800px) {
+    .nav__vision {
+        display: none;
+    }
+}
+
+.menu__btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-family: var(--primary-font);
+    font-size: var(--default-font-title);
+    text-transform: uppercase;
+    color: var(--theme-default-header);
+    text-shadow: var(--text-shadow);
+    position: fixed;
+    top: 28px;
+    right: 25px;
+}
+
+@media screen and (max-width: 800px) {
+    .menu__btn {
+        display: block;
+    }
+}

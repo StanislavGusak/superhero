@@ -3,11 +3,9 @@ import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { ThemeProvider } from './Context/ThemeProvider';
-import reportWebVitals from './reportWebVitals';
 import store from './store/store';
-import App from './App';
+import App from './Components/App/App';
 import './index.css';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,5 +19,3 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
-
-reportWebVitals();

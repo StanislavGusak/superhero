@@ -9,7 +9,6 @@ const Favourite = () => {
     const storeData = useSelector(state => state.favouriteReduser);
 
 useEffect(() => {
-
     const length = Object.keys(storeData).length;
     length.toString().length > 2 ? setCount('...') : setCount(length)
 });

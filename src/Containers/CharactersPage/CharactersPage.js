@@ -3,11 +3,9 @@ import PropTypes from 'prop-types';
 import CharactersList from '../../Components/CharactersPage/CharactersList/CharactersList';
 import { withErrorApi } from '../../Hoc/withErrorApi';
 import { GetApi } from '../../Utils/GetApi';
-import { API__CHARACTERS, IMG__URL } from '../../Components/constants';
+import { API__CHARACTERS, IMG__URL } from '../../Components/constants/constants';
 
 const CharactersPage = ({ setErrorApi }) => {
-// const CharactersPage = () => {
-
     const [characters, setCharacters,] = useState(null);
 
     const getResource = async (url) => {
@@ -36,9 +34,7 @@ const CharactersPage = ({ setErrorApi }) => {
 
     return (
         <>
-            <div className='wrapper'>
-                {characters && <CharactersList characters={characters} />}
-            </div>
+            {characters && <CharactersList characters={characters} />}
         </>
     )
 }
@@ -48,6 +44,5 @@ CharactersPage.propTypes = {
 }
 
 export default withErrorApi(CharactersPage);
-// export default CharactersPage;
 
 

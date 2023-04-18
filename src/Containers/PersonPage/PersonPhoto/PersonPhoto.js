@@ -2,9 +2,8 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import starFill from './img/star-fill.svg';
 import starOutFill from './img/star.svg';
-
 import { setCharacterToFavourite, removeCharacterFromFavourite } from '../../../store/actions/index';
-import './PersonPhoto.scss';
+import styles from './PersonPhoto.module.css';
 
 const PersonPhoto = ({
     personId,
@@ -31,13 +30,13 @@ const PersonPhoto = ({
     }
 
     return (
-        <div className='photo'>
-            <img src={personPhoto} alt={personName} className='photo__img' />
+        <div className={styles.photo}>
+            <img src={personPhoto} alt={personName} className={styles.photo__img} />
             <img
                 src={personFavourite ? starFill : starOutFill}
                 onClick={dispatchFavourite}
                 alt='Add to favourite'
-                className='favourite'
+                className={styles.favourite}
             />
         </div>
     )

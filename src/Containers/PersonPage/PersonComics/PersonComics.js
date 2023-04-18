@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import './PersonComics.scss';
+import styles from './PersonComics.module.css';
 
 const PersonComics = ({ personComics }) => {
     const [comicsName, setComicsName] = useState([]);
@@ -19,15 +19,15 @@ const PersonComics = ({ personComics }) => {
     }, []);
 
     return (
-        <div className='series'>
-            <ul className='series__list'>
+        <div className={styles.series}>
+            <ul className={styles.series__list}>
                 {comicsName
                     .sort((a, z) => a - z)
                     .map(({ name }) =>
-                        <li key={name} className='series__list-item'>
-                            <span className='subtitle'>Series</span>
-                            <span className='colon'> : </span>
-                            <span className='description'>{name}</span>
+                        <li key={name} className={styles.series__list__item}>
+                            <span className={styles.subtitle}>Series</span>
+                            <span className={styles.colon}> : </span>
+                            <span className={styles.description}>{name}</span>
                         </li>
                     )}
             </ul>

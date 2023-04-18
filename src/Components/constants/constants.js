@@ -18,9 +18,9 @@ export const API__URL = HTTPS + API__URL__ROOT + KEY;
 export const API__CHARACTERS = API__URL + API__KEY;
 export const API__PERSON = API__URL + API__KEY;
 export const API__SEARCH = HTTPS + API__ROOT + CHARACTERS + API__PARAM__SEARCH;
-export const MARVEL = 'https://developer.marvel.com/' 
-// imgKey
+export const MARVEL = 'https://developer.marvel.com/';
 
+// imgKey
 export const IMG__URL = 'standard_xlarge';
 export const IMG__NOT__AVALIABLE = 'image_not_available';
 

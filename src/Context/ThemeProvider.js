@@ -5,6 +5,7 @@ export const THEME__DARK = 'dark';
 export const THEME__NEITRAL = 'neitral';
 
 const ThemeContext = React.createContext();
+export const useTheme = () => useContext(ThemeContext); 
 
 export const ThemeProvider = ({ children, ...props }) => {
     const [theme, setTheme] = useState(null);
@@ -26,5 +27,3 @@ export const ThemeProvider = ({ children, ...props }) => {
         </ThemeContext.Provider>
     )
 }
-
-export const useTheme = () => useContext(ThemeContext);

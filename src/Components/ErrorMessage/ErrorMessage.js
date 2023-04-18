@@ -1,11 +1,12 @@
 import React from 'react';
-import './ErrorMessage.scss';
+import cn from 'classnames';
+import styles from './ErrorMessage.module.css';
 
 
 const ErrorMessage = () => {
     return (
         <div>
-            <p className='error title'>Page is not defined!</p>
+            <p className={cn(styles.error, styles.title)}>Page is not defined!</p>
         </div>
     )
 }

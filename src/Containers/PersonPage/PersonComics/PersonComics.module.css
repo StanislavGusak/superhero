@@ -1,0 +1,30 @@
+.series {
+    padding-top: 20px;
+}
+
+.series__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.series__item {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.subtitle {
+    background-color: var(--red);
+    border-radius: 2px;
+    padding: 0 8px;
+}
+
+.colon {
+    width: 20px;
+    font-weight: var(--secondary-font-weight);
+    text-align: center;
+}
+
+.description {
+    text-shadow: var(--text-shadow);
+}

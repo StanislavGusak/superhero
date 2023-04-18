@@ -3,7 +3,7 @@ import { debounce } from 'lodash';
 import { GetApi } from '../../Utils/GetApi';
 import UiInput from '../../Utils/UI/UiInput/UiInput';
 import SearchPageInfo from '../../Components/SearchPage/SearchPageInfo';
-import { API__SEARCH, HASH, API__KEY } from '../../Components/constants';
+import { API__SEARCH, HASH, API__KEY } from '../../Components/constants/constants';
 import photo from './img/Hulk.png';
 import styles from './SearchPage.module.css';
 

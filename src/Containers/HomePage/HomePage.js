@@ -2,7 +2,6 @@ import React from 'react';
 import ChooseSide from '../../Components/HomePage/ChooseSide/ChooseSide';
 import styles from './HomePage.module.css';
 
-
 const HomePage = () => {
     return (
         <>
